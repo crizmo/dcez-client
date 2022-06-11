@@ -20,6 +20,7 @@ export default class card extends Component {
         //         cardstate: response.data.state,
         //     })
         // })  
+        
         axios.get(`/card/${document.getElementById('discordid').value}`).then(response => {
             console.log(response.data);
             this.setState({
@@ -28,6 +29,7 @@ export default class card extends Component {
                 cardtype: response.data.type,
                 carddetails: response.data.details,
                 cardstate: response.data.state,
+                timestamp: response.data.timestamps.start,
             })
         })
     }
@@ -42,6 +44,7 @@ export default class card extends Component {
                 <h1>Card type : {this.state.cardtype}</h1>
                 <h1>Card details : {this.state.carddetails}</h1>
                 <h1>Card state : {this.state.cardstate}</h1>
+                <h1>Timestamp : {this.state.timestamp}</h1>
             </div>
         )
     }
