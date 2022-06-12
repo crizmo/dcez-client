@@ -9,7 +9,17 @@ export default class card extends Component {
         }
     }
 
+    updateCard = () => {
+        axios.get('/card')
+        .then(res => {
+            this.setState({
+                cards: res.data.name
+            })
+        }
+    )}
+
     handleButtonClick = () => {
+        
         axios.get('/card').then(response => {
             // console.log(response.data);
             this.setState({
@@ -19,7 +29,7 @@ export default class card extends Component {
                 carddetails: response.data.details,
                 cardstate: response.data.state
             })
-        })  
+        }) 
 
         axios.get(`/card/${document.getElementById('discordid').value}`).then(response => {
             // console.log(response.data);
@@ -43,6 +53,9 @@ export default class card extends Component {
                 <p>{this.state.cardtype}</p>
                 <p>{this.state.carddetails}</p>
                 <p>{this.state.cardstate}</p>
+
+                <button onClick={this.updateCard}>Update Card</button>
+                <p>{this.state.cards}</p>
             </div>
         )
     }
