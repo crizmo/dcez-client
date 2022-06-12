@@ -7,7 +7,7 @@ function App() {
   const [cards, setCards] = useState([])
 
   socket.on('message', function (data) {
-    // console.log(data)
+    console.log(data)
 
     let datainfo = [{
       id: data.stuff.id,
@@ -29,24 +29,22 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>DCEZ Client</h1>
-
+      <div className="main">
         <input type="text" id='user-id' placeholder="Enter your user id" defaultValue="784141856426033233" />
         <button onClick={sendUser}>Send User</button>
         
         {cards.map((card, index) => {
           return (
-            <div key={index}>
+            <div key={index} className="card">
               <h2>{card.name}</h2>
+              <p>{card.details}</p>
               <p>{card.state}</p>
               <p>{card.id}</p>
-              <p>{card.type}</p>
-              <p>{card.details}</p>
+              <p className='type'>{card.type}</p>
             </div>
           )
         })}
-      </header>
+      </div>
     </div>
   );
 }
