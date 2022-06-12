@@ -7,7 +7,7 @@ function App() {
   const [cards, setCards] = useState([])
 
   socket.on('message', function (data) {
-    console.log(data)
+    // console.log(data)
 
     let datainfo = [{
       id: data.stuff.id,
