@@ -20,7 +20,6 @@ function App() {
     setCards(datainfo)
   })
 
-  
   const sendUser = () => {
     const userid = document.getElementById('user-id').value
     // console.log(userid)
