@@ -15,6 +15,9 @@ function App() {
       state: data.stuff.state,
       type: data.stuff.type,
       details: data.stuff.details,
+
+      card: data.card,
+      basecard: data.baseimg
     }]
 
     setCards(datainfo)
@@ -40,6 +43,7 @@ function App() {
               <p>{card.state}</p>
               <p>{card.id}</p>
               <p className='type'>{card.type}</p>
+              <img src={`data:image/svg+xml;base64,${card.basecard}`} alt=""/>
             </div>
           )
         })}
