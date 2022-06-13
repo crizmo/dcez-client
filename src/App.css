@@ -49,6 +49,10 @@
   padding-left: 70px;
 }
 
+.card img {
+  padding-left: 30px;
+}
+
 .type {
   padding-bottom: 20px;
 }
