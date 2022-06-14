@@ -34,24 +34,23 @@
   margin: auto;
   font-family: arial;
   background-color: grey;
-  padding-right: 30px;
 }
 
 .card h2 {
   color: black;
   font-size: medium;
-  padding-left: 70px;
   padding-top: 20px;
+  text-align: center;
 }
 
 .card p {
   color: black;
   font-size: small;
-  padding-left: 70px;
+  text-align: center;
 }
 
 .card img {
-  padding-left: 30px;
+  padding-left: 50px;
 }
 
 .type {
