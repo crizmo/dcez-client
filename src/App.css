@@ -50,7 +50,11 @@
 }
 
 .card img {
-  padding-left: 50px;
+  padding-left: 35px;
+}
+
+.svgimage {
+  padding-left: 35px;
 }
 
 .type {
