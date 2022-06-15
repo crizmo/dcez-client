@@ -33,7 +33,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: auto;
   font-family: arial;
-  background-color: grey;
+  background-color: rgb(211, 211, 211);
 }
 
 .card h2 {
