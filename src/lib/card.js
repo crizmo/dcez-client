@@ -30,13 +30,18 @@ function Card() {
     
     const sendUser = () => {
         const userid = document.getElementById('user-id').value
-        socket.emit('user', { userid: userid })
+        const about = document.getElementById('about').value
+        socket.emit('user', { 
+            userid: userid,
+            about: about
+        })
     }
 
     return (
         <div className="App">
             <div className="main">
                 <input type="text" id='user-id' placeholder="Enter your user id" defaultValue="784141856426033233" />
+                <input type="text" id='about' placeholder="Enter your about" defaultValue="Itz me Kurizu" />
                 <button onClick={sendUser}>Send User</button>
                 <div className='card'>
                     {cards.map((card, index) => {
