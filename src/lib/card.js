@@ -31,9 +31,11 @@ function Card() {
     const sendUser = () => {
         const userid = document.getElementById('user-id').value
         const about = document.getElementById('about').value
+        const banner = document.getElementById('banner').value
         socket.emit('user', { 
             userid: userid,
-            about: about
+            about: about,
+            banner: banner
         })
     }
 
@@ -42,6 +44,7 @@ function Card() {
             <div className="main">
                 <input type="text" id='user-id' placeholder="Enter your user id" defaultValue="784141856426033233" />
                 <input type="text" id='about' placeholder="Enter your about" defaultValue="Itz me Kurizu" />
+                <input type="text" id='banner' placeholder='Enter your banner image url' defaultValue="https://wallpapercave.com/wp/wp4771870.jpg" />
                 <button onClick={sendUser}>Send User</button>
                 <div className='card'>
                     {cards.map((card, index) => {
