@@ -54,6 +54,7 @@
 }
 
 .svgimage {
+  border-radius: 50%;
   padding-left: 285px;
 }
 
