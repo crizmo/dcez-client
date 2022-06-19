@@ -5,6 +5,7 @@ const socket = io.connect("http://localhost:3001")
 
 function Card() {
     const [cards, setCards] = useState([])
+    const [notInGuild, setNotInGuild] = useState([])
 
     socket.on('message', function (data) {
         // console.log(data.card)
@@ -25,6 +26,16 @@ function Card() {
 
         setCards(datainfo)
     
+    })
+
+    socket.on('not-in-server', function (data) {
+        // console.log(data)
+
+        let not_in_guild = [{
+            user: data.userid
+        }]
+
+        setNotInGuild(not_in_guild)
     })
 
     
@@ -72,6 +83,14 @@ function Card() {
                     })}
                     <div id='svg' className='svgimage'></div>
                 </div>
+                <p>{notInGuild.map((user, index) => {
+                    return (
+                        <p key={index}>
+                            User with {user.user} is not in the server
+                        </p>
+                    )
+                }
+                )}</p>
             </div>
         </div>
     );
