@@ -9,12 +9,31 @@
   color: white;
 }
 
-.main input{
+.inp {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.large {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.small {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -54,8 +73,7 @@
 }
 
 .svgimage {
-  border-radius: 50%;
-  padding-left: 285px;
+  margin-left: 39.5%;
 }
 
 .type {
