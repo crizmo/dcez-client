@@ -29,13 +29,17 @@ function Card() {
     })
 
     socket.on('not-in-server', function (data) {
-        // console.log(data)
 
         let not_in_guild = [{
             user: data.userid
         }]
 
         setNotInGuild(not_in_guild)
+    })
+
+    socket.on('no-activity', function (data) {
+        let svgdiv = document.getElementById('svg')
+        svgdiv.innerHTML = data.card
     })
 
     
@@ -81,16 +85,15 @@ function Card() {
                             </div>
                         )
                     })}
+                    {notInGuild.map((user, index) => {
+                        return (
+                            <p key={index}>
+                                User with {user.user} is not in the server
+                            </p>
+                        )
+                    })}
                     <div id='svg' className='svgimage'></div>
                 </div>
-                <p>{notInGuild.map((user, index) => {
-                    return (
-                        <p key={index}>
-                            User with {user.user} is not in the server
-                        </p>
-                    )
-                }
-                )}</p>
             </div>
         </div>
     );
