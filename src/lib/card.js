@@ -1,7 +1,7 @@
 import '../App.css';
 import io from 'socket.io-client'
 import { useState } from 'react';
-const socket = io.connect("https://api-breeze.herokuapp.com/")
+const socket = io.connect("http://api-breeze.herokuapp.com")
 
 function Card() {
     const [cards, setCards] = useState([])
