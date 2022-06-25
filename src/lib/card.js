@@ -95,6 +95,7 @@ function Card() {
                     <div id='svg' className='svgimage'></div>
                 </div>
             </div>
+            <img src='https://api-breeze.herokuapp.com/api_png/784141856426033233' alt="" />
         </div>
     );
 }
