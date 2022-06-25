@@ -9,6 +9,9 @@ function Card() {
 
     socket.on('message', function (data) {
         // console.log(data.card)
+
+        let user = document.getElementById('user-id').value
+        let api = `https://api-breeze.herokuapp.com/api/${user}`
         
         let datainfo = [{
             id: data.stuff.id,
@@ -18,11 +21,13 @@ function Card() {
             details: data.stuff.details,
             
             svg: data.card,
-            basecard: data.baseimg
+            basecard: data.baseimg,
+            apiimg: api
         }]
         
         let svgdiv = document.getElementById('svg')
         svgdiv.innerHTML = data.card
+
 
         setCards(datainfo)
     
@@ -63,6 +68,13 @@ function Card() {
         }
     }
 
+    // const loadapi = () => {
+    //     const userid = document.getElementById('user-id').value
+    //     const api = `https://api-breeze.herokuapp.com/api/${userid}`
+    //     const svgdiv = document.getElementById('api')
+    //     svgdiv.innerHTML = `<img src="${api}" alt="">`
+    // }
+
     return (
         <div className="App">
             <div className="main">
@@ -81,7 +93,7 @@ function Card() {
                                 <p>{card.state}</p>
                                 <p>{card.id}</p>
                                 <p className='type'>{card.type}</p>
-                                {/* <img src={`data:image/svg+xml;base64,${card.basecard}`} alt="" /> */}
+                                {/* <button onClick={loadapi}>Load API</button> */}
                             </div>
                         )
                     })}
@@ -93,9 +105,9 @@ function Card() {
                         )
                     })}
                     <div id='svg' className='svgimage'></div>
+                    {/* <div id='api' className='apiimage'></div> */}
                 </div>
             </div>
-            <img src='https://api-breeze.herokuapp.com/api_png/784141856426033233' alt="" />
         </div>
     );
 }
