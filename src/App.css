@@ -72,6 +72,12 @@
   padding-left: 35px;
 }
 
+.not_in_guild {
+  color: red;
+  font-size: medium;
+  text-align: center;
+}
+
 .svgimage {
   padding-top: 20px;
   padding-bottom: 20px;
