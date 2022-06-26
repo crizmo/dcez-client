@@ -1,7 +1,7 @@
 import '../App.css';
 import io from 'socket.io-client'
 import { useState } from 'react';
-const socket = io.connect("https://api-breeze.herokuapp.com/")
+const socket = io.connect("https://api-breeze.herokuapp.com/") // https://localhost:3001/ // https://api-breeze.herokuapp.com/
 
 function Card() {
     const [cards, setCards] = useState([])
@@ -28,7 +28,6 @@ function Card() {
         let svgdiv = document.getElementById('svg')
         svgdiv.innerHTML = data.card
 
-
         setCards(datainfo)
     
     })
@@ -40,6 +39,8 @@ function Card() {
         }]
 
         setNotInGuild(not_in_guild)
+        let svgdiv = document.getElementById('svg')
+        svgdiv.innerHTML = ``
     })
 
     socket.on('no-activity', function (data) {
@@ -98,9 +99,12 @@ function Card() {
                         )
                     })}
                     {notInGuild.map((user, index) => {
+                        setTimeout(() => {
+                            setNotInGuild([])
+                        } , 5000)
                         return (
-                            <p key={index}>
-                                User with {user.user} is not in the server
+                            <p key={index} className='not_in_guild'>
+                                User with id {user.user} is not in the server
                             </p>
                         )
                     })}
