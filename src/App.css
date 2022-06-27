@@ -1,91 +1,151 @@
-.App {
-  /* text-align: center; */
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
+body {
+  background-color: #303030;
 }
 
-.inp {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+.site {
+  width: 15%;
+  height: 30px;
+  margin-top: 280px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 550px;
+  text-align: center;
+  color: aqua;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.inp-id {
+  width: 15%;
+  height: 30px;
+  margin-top: 350px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 400px;
+  text-align: center;
+}
+
+.inp-about {
+  width: 15%;
+  height: 30px;
+  margin-top: 350px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 700px;
+  text-align: center;
+}
+
+.inp-banner {
+  width: 30.7%;
+  height: 30px;
+  margin-top: 400px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 400px;
+  text-align: center;
 }
 
 .large {
-  width: 50%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 4px;
-  box-sizing: border-box;
+  width: 30.7%;
+  height: 30px;
+  margin-top: 450px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 400px;
+  text-align: center;
 }
 
 .small {
-  width: 50%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 4px;
-  box-sizing: border-box;
+  width: 30.7%;
+  height: 30px;
+  margin-top: 500px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 400px;
+  text-align: center;
 }
 
-.main button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+.sendbtn {
+  width: 31.2%;
+  height: 35px;
+  margin-top: 550px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 400px;
+  text-align: center;
+  background-color: rgb(113, 140, 228);
+  border-radius: 10px;
   border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
   cursor: pointer;
-  width: 100%;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: auto;
-  font-family: arial;
-  background-color: rgb(211, 211, 211);
-}
-
-.card h2 {
-  color: black;
-  font-size: medium;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.card p {
-  color: black;
-  font-size: small;
-  text-align: center;
-}
-
-.card img {
-  padding-left: 35px;
-}
-
-.not_in_guild {
-  color: red;
-  font-size: medium;
-  text-align: center;
+.sendbtn:hover {
+  background-color: rgb(30, 128, 255);
+  transition: 0.5s;
 }
 
 .svgimage {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 39.5%;
+  margin-left: 1150px;
+  padding-top: 250px;
+  z-index: 0;
+  top: 0%;
+  margin-top: 0px;
+  position: absolute;
 }
 
-.type {
-  padding-bottom: 20px;
+.card-name {
+  width: 30.7%;
+  height: 30px;
+  margin-top: 500px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 520px; 
+  color: black;
+  font-size: medium;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-state {
+  width: 30.7%;
+  height: 30px;
+  margin-top: 540px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 520px;  
+  color: black;
+  font-size: medium;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-details {
+  width: 30.7%;
+  height: 30px;
+  margin-top: 570px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 520px; 
+  color: black;
+  font-size: medium;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-type {
+  width: 30.7%;
+  height: 30px;
+  margin-top: 600px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 520px; 
+  color: black;
+  font-size: medium;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 @keyframes App-logo-spin {
