@@ -1,7 +1,7 @@
 import '../App.css';
 import io from 'socket.io-client'
 import { useState } from 'react';
-const socket = io.connect("https://api-breeze.herokuapp.com/") // https://localhost:3001/ // https://api-breeze.herokuapp.com/
+const socket = io.connect("http://localhost:3001/") // http://localhost:3001/ // https://api-breeze.herokuapp.com/
 
 function Card() {
     const [cards, setCards] = useState([])
@@ -79,31 +79,34 @@ function Card() {
     return (
         <div className="App">
             <div className="main">
-                <input className='inp' type="text" id='user-id' placeholder="Enter your user id" />
-                <input className='inp' type="text" id='about' placeholder="Enter your about" defaultValue="Itz me !" />
-                <input className='inp' type="text" id='banner' placeholder='Enter your banner image url' defaultValue="https://wallpapercave.com/wp/wp4771870.jpg" />
-                <input className='large' type="text" id='large-image' placeholder='Enter your large image url' defaultValue="https://cdn.discordapp.com/attachments/952764969638834228/979995425874513960/Criz.png" />
-                <input className='small' type="text" id='small-image' placeholder='Enter your small image url' defaultValue="https://cdn.discordapp.com/attachments/952764969638834228/979994810012295208/Criz.png" />
-                <button onClick={sendUser}>Send User</button>
+                <div className="inputs">
+                    <h2 className='site'>Breeze</h2>
+                    <input className='inp-id' type="text" id='user-id' placeholder="Enter your user id" />
+                    <input className='inp-about' type="text" id='about' placeholder="Enter your about" defaultValue="Itz me !" />
+                    <input className='inp-banner' type="text" id='banner' placeholder='Enter your banner image url' defaultValue="https://wallpapercave.com/wp/wp4771870.jpg" />
+                    <input className='large' type="text" id='large-image' placeholder='Enter your large image url' defaultValue="https://cdn.discordapp.com/attachments/952764969638834228/979995425874513960/Criz.png" />
+                    <input className='small' type="text" id='small-image' placeholder='Enter your small image url' defaultValue="https://cdn.discordapp.com/attachments/952764969638834228/979994810012295208/Criz.png" />
+                    <button onClick={sendUser} className='sendbtn'>Send User</button>
+                </div>
                 <div className='card'>
                     {cards.map((card, index) => {
                         return (
                             <div key={index}>
-                                <h2>{card.name}</h2>
-                                <p>{card.details}</p>
-                                <p>{card.state}</p>
-                                <p>{card.id}</p>
-                                <p className='type'>{card.type}</p>
-                                {/* <button onClick={loadapi}>Load API</button> */}
+                                    {/* <h2 className='card-name'>{card.name}</h2>
+                                    <p className='card-state'>{card.state}</p>
+                                    <p className='card-details'>{card.details}</p>
+                                    <p className='card-type'>{card.type}</p> */}
+                                    {/* <button onClick={loadapi}>Load API</button> */}
                             </div>
                         )
                     })}
                     {notInGuild.map((user, index) => {
                         setTimeout(() => {
                             setNotInGuild([])
+                            setCards([])
                         } , 5000)
                         return (
-                            <p key={index} className='not_in_guild'>
+                            <p key={index}>
                                 User with id {user.user} is not in the server
                             </p>
                         )
