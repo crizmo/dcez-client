@@ -148,11 +148,164 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1500px) {
+  .site {
+    margin-top: 100px;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .inp-id {
+    margin-top: 170px;
+    margin-left: 350px;
+    width: auto;
+    height: 30px;
+  }
+
+  .inp-about {
+    align-items: center;
+    margin-top: 170px;
+    align-self: center;
+    align-content: center;
+  }
+
+  .inp-banner {
+    margin-top: 220px;
+    margin-left: 350px;
+    width: 463px;
+    height: 30px;
+  }
+
+  .large {
+    margin-top: 270px;
+    margin-left: 350px;
+    width: 463px;
+    height: 30px;
+  }
+
+  .small {
+    margin-top: 320px;
+    margin-left: 350px;
+    width: 463px;
+    height: 30px;
+  }
+
+  .sendbtn {
+    margin-top: 370px;
+    margin-left: 350px;
+    width: 468px;
+    height: 35px;
+  }
+
+  .svgimage {
+    margin-left: 900px;
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .site {
+    margin-top: 20px;
+    margin-left: 230px;
+  }
+
+  .inp-id {
+    margin-top: 70px;
+    margin-left: 50px;
+    width: auto;
+    height: 25px;
+  }
+
+  .inp-about {
+    margin-top: 70px;
+    margin-left: 275px;
+    width: auto;
+    height: 25px;
+  }
+
+  .inp-banner {
+    margin-top: 110px;
+    margin-left: 50px;
+    width: 437px;
+    height: 25px;
+  }
+
+  .large {
+    margin-top: 150px;
+    margin-left: 50px;
+    width: 437px;
+    height: 25px;
+  }
+
+  .small {
+    margin-top: 190px;
+    margin-left: 50px;
+    width: 437px;
+    height: 25px;
+  }
+
+  .sendbtn {
+    margin-top: 230px;
+    margin-left: 50px;
+    width: 442px;
+    height: 35px;
+  }
+
+  .svgimage {
+    margin-left: 110px;
+    padding-top: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .site {
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+
+  .inp-id {
+    margin-top: 70px;
+    margin-left:50px;
+    width: auto;
+    height: 20px;
+  }
+
+  .inp-about {
+    margin-top: 100px;
+    margin-left:50px;
+    width: auto;
+    height: 20px;
+  }
+
+  .inp-banner {
+    margin-top: 130px;
+    margin-left:50px;
+    width: auto;
+    height: 20px;
+  }
+
+  .large {
+    margin-top: 160px;
+    margin-left:50px;
+    width: auto;
+    height: 20px;
+  }
+
+  .small {
+    margin-top: 190px;
+    margin-left:50px;
+    width: auto;
+    height: 20px;
+  }
+
+  .sendbtn {
+    margin-top: 220px;
+    margin-left:110px;
+    width: 100px;
+    height: 40px;
+  }
+
+  .svgimage {
+    margin-left: 15px;
+    padding-top: 300px;
   }
 }
