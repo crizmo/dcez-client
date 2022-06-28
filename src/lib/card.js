@@ -1,7 +1,7 @@
 import '../App.css';
 import io from 'socket.io-client'
 import { useState } from 'react';
-const socket = io.connect("https://api-breeze.herokuapp.com/") // http://localhost:3001/ // https://api-breeze.herokuapp.com/
+const socket = io.connect("http://localhost:3001/") // http://localhost:3001/ // https://api-breeze.herokuapp.com/
 
 function Card() {
     const [cards, setCards] = useState([])
@@ -21,7 +21,6 @@ function Card() {
             details: data.stuff.details,
             
             svg: data.card,
-            basecard: data.baseimg,
             apiimg: api
         }]
         
@@ -60,7 +59,7 @@ function Card() {
             alert('Please enter a user id')
         } else {
             socket.emit('user', { 
-                userid: userid,
+                userid: userid, 
                 about: about,
                 banner: banner,
                 large_image: large_image,
@@ -83,9 +82,9 @@ function Card() {
                     <h2 className='site'>Breeze</h2>
                     <input className='inp-id' type="text" id='user-id' placeholder="Enter your user id" />
                     <input className='inp-about' type="text" id='about' placeholder="Enter your about" defaultValue="Itz me !" />
-                    <input className='inp-banner' type="text" id='banner' placeholder='Enter your banner image url' defaultValue="https://wallpapercave.com/wp/wp4771870.jpg" />
-                    <input className='large' type="text" id='large-image' placeholder='Enter your large image url' defaultValue="https://cdn.discordapp.com/attachments/952764969638834228/979995425874513960/Criz.png" />
-                    <input className='small' type="text" id='small-image' placeholder='Enter your small image url' defaultValue="https://cdn.discordapp.com/attachments/952764969638834228/979994810012295208/Criz.png" />
+                    <input className='inp-banner' type="text" id='banner' placeholder='Enter your banner image url'/>
+                    <input className='large' type="text" id='large-image' placeholder='Enter your large image url' />
+                    <input className='small' type="text" id='small-image' placeholder='Enter your small image url' />
                     <button onClick={sendUser} className='sendbtn'>Send User</button>
                 </div>
                 <div className='card'>
