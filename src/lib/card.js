@@ -34,7 +34,7 @@ function Card() {
     socket.on('not-in-server', function (data) {
 
         let not_in_guild = [{
-            user: data.userid
+            user: data.user_id
         }]
 
         setNotInGuild(not_in_guild)
@@ -49,7 +49,7 @@ function Card() {
 
     
     const sendUser = () => {
-        const userid = document.getElementById('user-id').value
+        let userid = document.getElementById('user-id').value
         const about = document.getElementById('about').value
         const banner = document.getElementById('banner').value
 
@@ -59,12 +59,14 @@ function Card() {
             alert('Please enter a user id')
         } else {
             socket.emit('user', { 
-                userid: userid, 
+                user: userid, 
                 about: about,
                 banner: banner,
                 large_image: large_image,
                 small_image: small_image
             })
+
+            console.log("User id : " + userid)
         }
     }
 
