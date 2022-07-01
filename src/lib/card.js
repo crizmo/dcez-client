@@ -49,7 +49,7 @@ function Card() {
 
     
     const sendUser = () => {
-        let userid = document.getElementById('user-id').value
+        const userid = document.getElementById('user-id').value
         const about = document.getElementById('about').value
         const banner = document.getElementById('banner').value
 
@@ -66,7 +66,7 @@ function Card() {
                 small_image: small_image
             })
 
-            console.log("User id : " + userid)
+            // console.log("User id : " + userid)
         }
     }
 
