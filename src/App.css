@@ -96,6 +96,32 @@ body {
   position: absolute;
 }
 
+.link-div {
+  color: aliceblue;
+  width: 31.2%;
+  height: 35px;
+  margin-top: 600px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 400px;
+  text-align: center;
+  border: none;
+  font-size: 15px;
+}
+
+.link-div a {
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: medium;
+    font-family: "Roboto", sans-serif;
+}
+
+.link-div a:hover {
+    color: rgb(30, 128, 255);
+    transition: 0.5s;
+}
+
 .card-name {
   width: 30.7%;
   height: 30px;
