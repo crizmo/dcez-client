@@ -13,6 +13,15 @@ function Card() {
         let user = document.getElementById('user-id').value
         let api = `https://api-breeze.herokuapp.com/api/${user}`
         
+        let about = document.getElementById('about').value
+        let banner = document.getElementById('banner').value
+        let large_image = document.getElementById('large-image').value
+        let small_image = document.getElementById('small-image').value
+
+        let api_link = `${api}?about=${about}&banner=${banner}&large_image=${large_image}&small_image=${small_image}`
+        const link_div = document.getElementById('link-div')
+        link_div.innerHTML = `<a href="${api_link}" target="_blank">Static API Card</a>`
+
         let datainfo = [{
             id: data.stuff.id,
             name: data.stuff.name,
@@ -114,6 +123,7 @@ function Card() {
                     })}
                     <div id='svg' className='svgimage'></div>
                     {/* <div id='api' className='apiimage'></div> */}
+                    <div id='link-div' className='link-div'></div>
                 </div>
             </div>
         </div>
