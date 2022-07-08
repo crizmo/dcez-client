@@ -11,7 +11,7 @@ function Card() {
         // console.log(data.card)
 
         let user = document.getElementById('user-id').value
-        let api = `https://api-breeze.herokuapp.com/api/${user}`
+        let api = `https://api-breeze.herokuapp.com/api/card/${user}`
         
         let about = document.getElementById('about').value
         let banner = document.getElementById('banner').value
