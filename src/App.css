@@ -1,6 +1,10 @@
 body {
-  background-color: #303030;
+  background-color: rgb(133, 133, 133);
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
 }
+
 
 .site {
   width: 15%;
