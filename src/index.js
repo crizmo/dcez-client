@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import { BrowserRouter } from "react-router-dom"; 
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import Card from "./lib/card";
+import Doc from "./lib/doc";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-  <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Routes>
+        <Route path="/" element={ <Doc /> } />
+        <Route path="/card" element={ <Card /> } />
+      </Routes>
     </BrowserRouter>
-  </React.StrictMode>
 );
