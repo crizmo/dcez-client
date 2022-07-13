@@ -34,3 +34,11 @@ body {
 .doc-img {
     border-radius: 10px;
 }
+
+.doc-title {
+    font-size: 20px;
+    color: rgb(248, 137, 109);
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
