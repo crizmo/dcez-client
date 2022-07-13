@@ -14,7 +14,7 @@ function Doc() {
                         Breeze helps you display your discord activity on your website / anywhere you want using the api or the client. <br />
                         <br />
                         To get started, you need to join the <a href="https://discord.gg/Ecy6WpEZsD" target="_blank" rel='noreferrer'>Breeze Discord</a> <br/>
-                        Thats all you need to do. Now you need to join the discord server since a discord bot is used to fetch your activity data. <br />
+                        Thats all you need to do. A discord bot is used to fetch your activity data.<br />
                         <br />
                         Once you have joined the server, you can use the client or the api to display your activity.
                     </p>
