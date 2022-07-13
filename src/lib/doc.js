@@ -31,7 +31,7 @@ function Doc() {
                     </p>
                     <h2 className="doc-title">Client</h2>
                     <p className="doc-text">
-                        Client site of breeze is available on <a href="https://breeze-stats.netlify.app/card" target="_blank" rel='noreferrer'>https://breeze-stats.netlify.app/card</a> <br />
+                        Client site of breeze is available on <a href="https://breeze-stats.netlify.app/card" rel='noreferrer'>https://breeze-stats.netlify.app/card</a> <br />
                         <br />
                     </p>
                     <img className="doc-img" src="https://api-breeze.herokuapp.com/api/compact/784141856426033233" alt=""/>
