@@ -1,4 +1,5 @@
-This is the frontend for the DCEZ client.
-fetching discord activity using express
+# Breeze cards
 
-submodule - breeze
+This is the frontend for the Breeze cards.
+Breeze helps you display your discord activity on your website / anywhere you want using the api or the client.
+
