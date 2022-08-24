@@ -81,7 +81,7 @@ function Card() {
 
     // const loadapi = () => {
     //     const userid = document.getElementById('user-id').value
-    //     const api = `https://api-breeze.herokuapp.com/api/${userid}`
+    //     const api = `https://api-breeze.herokuapp.com/api/card/${userid}`
     //     const svgdiv = document.getElementById('api')
     //     svgdiv.innerHTML = `<img src="${api}" alt="">`
     // }
