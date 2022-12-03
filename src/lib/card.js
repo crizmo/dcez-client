@@ -1,7 +1,7 @@
 import '../App.css';
 import io from 'socket.io-client'
 import { useState } from 'react';
-const socket = io.connect("https://api-breeze.herokuapp.com/") // http://localhost:3001/ // https://api-breeze.herokuapp.com/
+const socket = io.connect("https://breeze-api.kurizu.repl.co/") // http://localhost:3001/ // https://breeze-api.kurizu.repl.co/
 
 function Card() {
     const [cards, setCards] = useState([])
@@ -11,7 +11,7 @@ function Card() {
         // console.log(data.card)
 
         let user = document.getElementById('user-id').value
-        let api = `https://api-breeze.herokuapp.com/api/card/${user}`
+        let api = `https://breeze-api.kurizu.repl.co/api/card/${user}`
         
         let about = document.getElementById('about').value
         let banner = document.getElementById('banner').value
@@ -81,7 +81,7 @@ function Card() {
 
     // const loadapi = () => {
     //     const userid = document.getElementById('user-id').value
-    //     const api = `https://api-breeze.herokuapp.com/api/card/${userid}`
+    //     const api = `https://breeze-api.kurizu.repl.co/api/card/${userid}`
     //     const svgdiv = document.getElementById('api')
     //     svgdiv.innerHTML = `<img src="${api}" alt="">`
     // }

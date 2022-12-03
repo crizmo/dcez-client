@@ -25,8 +25,8 @@ function Doc() {
                         Endpoints of the api: <br />
                         <br />
                         Cards: <br />
-                        <a href="https://api-breeze.herokuapp.com/api/card" target="_blank" rel='noreferrer'>/api/card/:id</a> <br />
-                        <a href="https://api-breeze.herokuapp.com/api/compact" target="_blank" rel='noreferrer'>/api/compact/:id</a> <br /> <br />
+                        <a href="https://breeze-api.kurizu.repl.co/api/card" target="_blank" rel='noreferrer'>/api/card/:id</a> <br />
+                        <a href="https://breeze-api.kurizu.repl.co/api/compact" target="_blank" rel='noreferrer'>/api/compact/:id</a> <br /> <br />
                         Replace :id with your user id <br />
                     </p>
                     <h2 className="doc-title">Client</h2>
@@ -34,7 +34,7 @@ function Doc() {
                         Client site of breeze is available on <a href="https://breeze-stats.netlify.app/card" rel='noreferrer'>https://breeze-stats.netlify.app/card</a> <br />
                         <br />
                     </p>
-                    <img className="doc-img" src="https://api-breeze.herokuapp.com/api/compact/784141856426033233" alt=""/>
+                    <img className="doc-img" src="https://breeze-api.kurizu.repl.co/api/compact/784141856426033233" alt=""/>
                 </div>
             </div>
         </div>
