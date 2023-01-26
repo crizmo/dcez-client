@@ -28,11 +28,14 @@ function Doc() {
                         <a href="https://breeze-api.kurizu.repl.co/api/card" target="_blank" rel='noreferrer'>/api/card/:id</a> <br />
                         <a href="https://breeze-api.kurizu.repl.co/api/compact" target="_blank" rel='noreferrer'>/api/compact/:id</a> <br /> <br />
                         Replace :id with your user id <br />
+                        <br />
+                        More info on Github: <a href="https://github.com/crizmo/breeze" target="_blank" rel='noreferrer'>Breeze Github</a>
                     </p>
                     <h2 className="doc-title">Client</h2>
                     <p className="doc-text">
                         Client site of breeze is available on <a href="https://breeze-stats.netlify.app/card" rel='noreferrer'>https://breeze-stats.netlify.app/card</a> <br />
                         <br />
+                        Use it to get the right customization for your card. <br />
                     </p>
                     <img className="doc-img" src="https://breeze-api.kurizu.repl.co/api/compact/784141856426033233" alt=""/>
                 </div>
