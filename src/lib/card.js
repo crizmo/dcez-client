@@ -9,7 +9,7 @@ import {
     useTheme
 } from "@mui/material";
 import { inputLabelClasses } from "@mui/material/InputLabel";
-const { useState } = require("react");
+import { useState } from 'react';
 
 function Card() {
 
