@@ -1,3 +1,4 @@
+import React from 'react'
 import '../App.css';
 import {
     Box,
@@ -9,7 +10,6 @@ import {
 } from "@mui/material";
 import { inputLabelClasses } from "@mui/material/InputLabel";
 const { useState } = require("react");
-import React from 'react'
 
 function Card() {
 
