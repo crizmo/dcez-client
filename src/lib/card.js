@@ -25,16 +25,16 @@ function Card() {
         let hexcolor = document.getElementById('hex-code').value
 
 
-        if (!bannerurl.match(/\.(jpeg|jpg|gif|png)$/) != null) {
+        if (!bannerurl.match(/\.(jpeg|jpg|gif|png)$/) && bannerurl !== '') {
             alert('Please enter a valid banner url')
             return
-        } else if (!largeimageurl.match(/\.(jpeg|jpg|gif|png)$/) != null) {
+        } else if (!largeimageurl.match(/\.(jpeg|jpg|gif|png)$/) && largeimageurl !== '') {
             alert('Please enter a valid large image url')
             return
-        } else if (!smallimageurl.match(/\.(jpeg|jpg|gif|png)$/) != null) {
+        } else if (!smallimageurl.match(/\.(jpeg|jpg|gif|png)$/) && smallimageurl !== '') {
             alert('Please enter a valid small image url')
             return
-        } else if (!hexcolor.match(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/)) {
+        } else if (!hexcolor.match(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/) && hexcolor !== '') {
             alert('Please enter a valid hex code')
             return
         }
