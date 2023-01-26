@@ -1,3 +1,4 @@
+import React from 'react'
 import '../doc.css';
 
 function Doc() {
