@@ -30,7 +30,7 @@ function Doc() {
                         <a href="https://discord-cards.kurizu.repl.co/api/compact" target="_blank" rel="noopener noreferrer">/api/compact/:id</a> <br /> <br />
                         Replace :id with your user id <br />
                         <br />
-                        More info on Github: <a href="https://github.com/crizmo/breeze" target="_blank" rel="noopener noreferrer">Discord Cards Github</a>
+                        More info on Github: <a href="https://github.com/crizmo/DiscordCards" target="_blank" rel="noopener noreferrer">Discord Cards Github</a>
                     </p>
                     <h2 className="doc-title">Client</h2>
                     <p className="doc-text">
