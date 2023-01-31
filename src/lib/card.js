@@ -44,13 +44,13 @@ function Card() {
             hexcolor = hexcolor.substring(1)
         }
 
-        const largeapi = `https://breeze-api.kurizu.repl.co/api/card/${userid}?about=${aboutme}&banner=${bannerurl}&large_image=${largeimageurl}&small_image=${smallimageurl}&hex=${hexcolor}`
+        const largeapi = `https://discord-cards.kurizu.repl.co/api/card/${userid}?about=${aboutme}&banner=${bannerurl}&large_image=${largeimageurl}&small_image=${smallimageurl}&hex=${hexcolor}`
 
         const largesvgdiv = document.getElementById('large-api')
         largesvgdiv.innerHTML = `<img src="${largeapi}" alt="" class="card-img">`
         setLargeUrl(largeapi)
 
-        const smallapi = `https://breeze-api.kurizu.repl.co/api/compact/${userid}?about=${aboutme}&banner=${bannerurl}&large_image=${largeimageurl}&small_image=${smallimageurl}&hex=${hexcolor}`
+        const smallapi = `https://discord-cards.kurizu.repl.co/api/compact/${userid}?about=${aboutme}&banner=${bannerurl}&large_image=${largeimageurl}&small_image=${smallimageurl}&hex=${hexcolor}`
 
         const smallsvgdiv = document.getElementById('small-api')
         smallsvgdiv.innerHTML = `<img src="${smallapi}" alt="" class="card-img">`
