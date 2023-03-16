@@ -14,7 +14,7 @@ import { useState } from 'react';
 function Card() {
 
     const [largeUrl, setLargeUrl] = useState('')
-    const [smallUrl, setSmallUrl] = useState('')    
+    const [smallUrl, setSmallUrl] = useState('')
 
     const loadapi = () => {
         const userid = document.getElementById('user-id').value
@@ -60,30 +60,43 @@ function Card() {
     return (
         <div className="App">
             <div className="main">
-                <Typography variant="h4" sx={{ 
-                    mb: 2, 
-                    color: "#99aab5",
-                    fontFamily: "Inter",
-                    fontWeight: 400,
-                    fontSize: "1.5rem",
-                    textAlign: "center",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.1rem",
-                    lineHeight: "1.5rem",
-                    width: "100%",
-                    maxWidth: 500,
-                    margin: "0 auto",
-                    mt: 2,
-                }}>
-                    Discord Cards
-                </Typography>
+                <div className="content">
+                    <div className="doc">
+                        <Typography variant="h4" sx={{
+                            mb: 4,
+                            color: "rgb(77, 154, 255)",
+                            fontFamily: "Inter",
+                            fontWeight: 400,
+                            fontSize: "1.5rem",
+                            textAlign: "center",
+                            textTransform: "uppercase",
+                            letterSpacing: "0.1rem",
+                            lineHeight: "1.5rem",
+                            width: "100%",
+                            maxWidth: 500,
+                            margin: "0 auto",
+                            mt: 2,
+                        }}>
+                            Discord Cards
+                        </Typography>
+                        <p className="doc-text">
+                            Discord Cards helps you display your discord activity on your website / anywhere you want using the discord cards API.<br />
+                            <br />
+                            To get started, you need to join the <a href="https://discord.gg/Ecy6WpEZsD" target="_blank" rel="noopener noreferrer">Discord Cards Discord</a> <br />
+                            Thats all you need to do. A discord bot is used to fetch your activity data.<br />
+                            <br />
+                            Once you have joined the server, you can use the client or the api to display your activity. <br />
+                            Github Repo: <a href="https://github.com/crizmo/DiscordCards" target="_blank" rel="noopener noreferrer">https://github.com/crizmo/DiscordCards</a>
+                        </p>
+                    </div>
+                </div>
                 <Box
                     display="grid"
                     gap="10px"
                     gridTemplateColumns="repeat(4, minmax(0, 1fr))"
                     sx={{
                         width: '100%',
-                        maxWidth: 500,
+                        maxWidth: 800,
                         mb: 2,
                     }}
                     className="inputs"
@@ -96,7 +109,7 @@ function Card() {
                         {...(useMediaQuery(useTheme().breakpoints.down('sm')) && { size: 'small' })}
                         sx={{
                             width: '100%',
-                            maxWidth: 250,
+                            maxWidth: 500,
                             mb: 2,
                             gridColumn: "span 2",
                             input: {
@@ -104,7 +117,7 @@ function Card() {
                                 fontSize: "0.90rem",
                                 fontFamily: "Inter",
                                 height: "1.5rem",
-                            }   
+                            }
                         }}
                         InputLabelProps={{
                             sx: {
@@ -123,7 +136,7 @@ function Card() {
                         {...(useMediaQuery(useTheme().breakpoints.down('sm')) && { size: 'small' })}
                         sx={{
                             width: '100%',
-                            maxWidth: 250,
+                            maxWidth: 400,
                             mb: 2,
                             gridColumn: "span 2",
                             input: {
@@ -131,7 +144,7 @@ function Card() {
                                 fontSize: "0.80rem",
                                 fontFamily: "Inter",
                                 height: "1.5rem",
-                            }  
+                            }
                         }}
                         InputLabelProps={{
                             sx: {
@@ -151,7 +164,7 @@ function Card() {
                         {...(useMediaQuery(useTheme().breakpoints.down('sm')) && { size: 'small' })}
                         sx={{
                             width: '100%',
-                            maxWidth: 500,
+                            maxWidth: 800,
                             mb: 2,
                             gridColumn: "span 4",
                             input: {
@@ -159,7 +172,7 @@ function Card() {
                                 fontSize: "0.80rem",
                                 fontFamily: "Inter",
                                 height: "1.5rem",
-                            }  
+                            }
                         }}
                         InputLabelProps={{
                             sx: {
@@ -178,7 +191,7 @@ function Card() {
                         {...(useMediaQuery(useTheme().breakpoints.down('sm')) && { size: 'small' })}
                         sx={{
                             width: '100%',
-                            maxWidth: 500,
+                            maxWidth: 800,
                             mb: 2,
                             gridColumn: "span 4",
                             input: {
@@ -186,7 +199,7 @@ function Card() {
                                 fontSize: "0.80rem",
                                 fontFamily: "Inter",
                                 height: "1.5rem",
-                            }   
+                            }
                         }}
                         InputLabelProps={{
                             sx: {
@@ -205,7 +218,7 @@ function Card() {
                         {...(useMediaQuery(useTheme().breakpoints.down('sm')) && { size: 'small' })}
                         sx={{
                             width: '100%',
-                            maxWidth: 500,
+                            maxWidth: 800,
                             mb: 2,
                             gridColumn: "span 4",
                             input: {
@@ -213,7 +226,7 @@ function Card() {
                                 fontSize: "0.80rem",
                                 fontFamily: "Inter",
                                 height: "1.5rem",
-                            }  
+                            }
                         }}
                         InputLabelProps={{
                             sx: {
@@ -231,18 +244,18 @@ function Card() {
                         variant="outlined"
                         sx={{
                             width: '100%',
-                            maxWidth: 500,
+                            maxWidth: 800,
                             mb: 2,
                             gridColumn: "span 1",
                             input: {
                                 color: "#99aab5"
-                            } 
+                            }
                         }}
-                        {...(useMediaQuery(useTheme().breakpoints.down('sm')) && { 
+                        {...(useMediaQuery(useTheme().breakpoints.down('sm')) && {
                             size: 'small',
                             sx: {
                                 width: '100%',
-                                maxWidth: 500,
+                                maxWidth: 800,
                                 mb: 2,
                                 gridColumn: "span 2",
                                 input: {
@@ -250,7 +263,7 @@ function Card() {
                                     fontSize: "0.80rem",
                                     fontFamily: "Inter",
                                     height: "1.5rem",
-                                }  
+                                }
                             }
                         })}
                         InputLabelProps={{
@@ -265,38 +278,38 @@ function Card() {
                     <Button
                         variant="contained"
                         onClick={loadapi}
-                        sx={{ 
-                            width: '100%', 
+                        sx={{
+                            width: '100%',
                             height: '100%',
-                            maxWidth: 500, 
+                            maxWidth: 800,
                             maxHeight: 55,
-                            mb: 2, 
-                            backgroundColor: 'rgb(77, 154, 255)', 
-                            alignSelf: 'center', 
+                            mb: 2,
+                            backgroundColor: 'rgb(77, 154, 255)',
+                            alignSelf: 'center',
                             gridColumn: "span 3",
                             color: "#23272a",
                         }}
-                        {...(useMediaQuery(useTheme().breakpoints.down('sm')) && { 
+                        {...(useMediaQuery(useTheme().breakpoints.down('sm')) && {
                             sx: {
-                                width: '100%', 
+                                width: '100%',
                                 height: '100%',
-                                maxWidth: 500, 
+                                maxWidth: 800,
                                 maxHeight: 40,
-                                mb: 2, 
-                                backgroundColor: 'rgb(77, 154, 255)', 
-                                alignSelf: 'center', 
+                                mb: 2,
+                                backgroundColor: 'rgb(77, 154, 255)',
+                                alignSelf: 'center',
                                 gridColumn: "span 2",
                                 color: "#23272a",
                             }
-                         })}
+                        })}
                     >
                         Load API
                     </Button>
-                    
+
                     <Box
                         sx={{
                             width: '100%',
-                            maxWidth: 500,
+                            maxWidth: 800,
                             mb: 2,
                             gridColumn: "span 4",
                             display: 'flex',
@@ -308,53 +321,73 @@ function Card() {
                             paddingBottom: '1rem',
                         }}
                     >
-                        <div>
-                            {largeUrl && 
-                                <Button variant="contained" onClick={
-                                    () => window.open(largeUrl, "_blank")
-                                } sx={{
-                                    width: '100%',
-                                    maxWidth: 500,
-                                    mb: 2,
-                                    backgroundColor: 'rgb(77, 154, 255)',
-                                    alignSelf: 'center',
-                                    color: "#23272a",
-                                    fontFamily: "comic sans ms",
-                                    marginBottom: '1rem',
+                        <Box sx={{
+                            display: 'flex',
+                            flexDirection: 'row',
+                            justifyContent: 'top',
+                            alignItems: 'top'
+                        }}
+                            {...(useMediaQuery(useTheme().breakpoints.down('sm')) && {
+                                sx: {
                                     display: 'flex',
-                                    justifyContent: 'center',
-                                    alignItems: 'center'
-                                }}>
-                                    Open Large Image
-                                </Button>
-                            }
-                            <div id="large-api" className="large-api"/>
-                        </div>
-                        <div>
-                            {smallUrl &&
-                                <Button variant="contained" onClick={
-                                    () => window.open(smallUrl, "_blank")
-                                } sx={{
-                                    width: '100%',
-                                    maxWidth: 500,
-                                    mb: 4,
-                                    mt: 2,
-                                    backgroundColor: 'rgb(77, 154, 255)',
-                                    alignSelf: 'center',
-                                    color: "#23272a",
-                                    fontFamily: "comic sans ms",
-                                    marginBottom: '1rem',
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    alignItems: 'center'
-                                }}>
-                                    Open Small Image
-                                </Button>
-                            }
-                            <div id="small-api" className="small-api" />
-                        </div>
+                                    flexDirection: 'column',
+                                    justifyContent: 'top',
+                                    alignItems: 'top'
+                                }
+                            })}
+                        >
+                            <div style={{ marginLeft: '1rem' }} />
+                            <div>
+                                {largeUrl &&
+                                    <Button variant="contained" onClick={
+                                        () => window.open(largeUrl, "_blank")
+                                    } sx={{
+                                        width: '100%',
+                                        maxWidth: 500,
+                                        mb: 2,
+                                        backgroundColor: 'rgb(77, 154, 255)',
+                                        alignSelf: 'center',
+                                        color: "#23272a",
+                                        fontFamily: "comic sans ms",
+                                        marginBottom: '1rem',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        alignItems: 'center'
+                                    }}>
+                                        Open Large Image
+                                    </Button>
+                                }
+                                <div id="large-api" className="large-api" />
+                            </div>
+                            {/* add margin between boxes */}
+                            <div style={{ marginLeft: '1rem' }} />
+                            <div>
+                                {smallUrl &&
+                                    <Button variant="contained" onClick={
+                                        () => window.open(smallUrl, "_blank")
+                                    } sx={{
+                                        width: '100%',
+                                        maxWidth: 500,
+                                        mb: 4,
+                                        // mt: 2,
+                                        backgroundColor: 'rgb(77, 154, 255)',
+                                        alignSelf: 'center',
+                                        color: "#23272a",
+                                        fontFamily: "comic sans ms",
+                                        marginBottom: '1rem',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        alignItems: 'center'
+                                    }}>
+                                        Open Small Image
+                                    </Button>
+                                }
+                                <div id="small-api" className="small-api" />
+                            </div>
+                            <div style={{ marginLeft: '1rem' }} />
+                        </Box>
                     </Box>
-                            
+
                 </Box>
 
             </div>
