@@ -34,7 +34,7 @@ function Doc() {
                     </p>
                     <h2 className="doc-title">Client</h2>
                     <p className="doc-text">
-                        Client site of Discord Cards is available on <a href="https://discord-cards.netlify.app/card" rel="noopener noreferrer">https://discord-cards.netlify.app/card</a> <br />
+                        Client site of Discord Cards is available on <a href="https://discord-cards.vercel.app/card" rel="noopener noreferrer">https://discord-cards.vercel.app/card</a> <br />
                         <br />
                         Use it to get the right customization for your card. <br />
                     </p>
